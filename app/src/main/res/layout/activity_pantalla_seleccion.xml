@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnContinuar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2D0D0"
+    android:backgroundTint="#D2D0D0">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat"
+        android:text="CATEGORÍA DE LA DENUNCIA"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAcosoSexual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="124dp"
+        android:text="@string/acoso_sexual_o_por_raz_n_de_sexo"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#FFFFFF"
+        android:drawableTint="#000000"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/btnAcosoLaboral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/acoso_laboral"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAcosoSexual"
+        android:backgroundTint="#FFFFFF"
+        android:drawableTint="#000000"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/btnIncumplimientoNormativo"
+        android:layout_width="315dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableTint="#000000"
+        android:textColor="#000000"
+        android:text="@string/incumplimiento_normativo_o_delito"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIncumplimientoEtico" />
+
+    <Button
+        android:id="@+id/btnIncumplimientoEtico"
+        android:layout_width="315dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableTint="#000000"
+        android:textColor="#000000"
+        android:text="@string/incumplimiento_del_c_digo_tico"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAcosoLaboral" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
